@@ -13,12 +13,13 @@
 }
 
 .main {
-    background-image: url(img/circus.jpg);
     margin: 0 auto;
-    background-repeat: no-repeat;
-    width: 39%;
-    height: 60%;
     position: relative;
+    width: 740px;
+    height: 572px;
+    background-image: url(img/circus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -32,7 +33,7 @@
     height: 120px;
     background-repeat: no-repeat;
     background-size: contain;
-    animation: ball1 3s infinite ease-in-out;
+    animation: ball-1 1s infinite alternate  ease-in ;
 }
 
 .ball2 {
@@ -45,22 +46,23 @@
     background-size: contain;
     width: 75px;
     height: 75px;
-    animation: ball2 4s infinite ease-in-out;
+    animation: ball-2 5s infinite ease-in-out;
 
 }
 
-@keyframes ball1 {
+@keyframes ball-1 {
     0% {
         top: 25px;
     }
 
-    50% {
+    100% {
         top: 265px;
     }
 
+
 }
 
-@keyframes ball2 {
+@keyframes ball-2 {
     0% {
         left: 200px;
         transform: rotate(0deg);
